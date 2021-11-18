@@ -42,7 +42,7 @@ until [[ "$selection" = "4" ]]; do
      echo ""
      echo "Script By RC Chuah"
      echo ""
-     echo "Current date and time : "
+     echo "Current Date And Time :"
      date
      echo ""
      echo "[1]-Install Kali Nethunter In Termux Full Version"
