@@ -50,7 +50,7 @@ until [[ "$selection" = "4" ]]; do
      echo "[3]-Uninstall Kali Nethunter In Termux"
      echo "[4]-Exit Menu"
      echo ""
-     echo -n "Enter selection: "
+     echo -n "Enter Selection: "
      read selection
      echo ""
      case $selection in
