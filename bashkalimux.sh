@@ -40,7 +40,7 @@ until [[ "$choice" = "4" ]]; do
      clear
      echo "Kali-Nethunter-In-Termux Installer"
      echo ""
-     echo "Script By RC Chuah"
+     echo "Script By RC Chuah-(RaynerSec)"
      echo ""
      echo "Current Date And Time:"
      date
