@@ -7,11 +7,15 @@
 
 # Menu Choices
 function full() {
-     bash -c "cd ${HOME} && $(curl -fsSL https://bit.do/fNyso) && rm -rf ${HOME}/kalifs-armhf-full.tar.xz && rm -rf ${HOME}/kalifs-arm64-full.tar.xz && rm -rf ${HOME}/kalifs-armhf-full.sha512sum && rm -rf ${HOME}/kalifs-arm64-full.sha512sum"
+     bash -c "cd ${HOME} && $(curl -fsSL https://bit.ly/install-nethunter-full-termux) && rm -rf ${HOME}/kalifs-armhf-full.tar.xz && rm -rf ${HOME}/kalifs-arm64-full.tar.xz && rm -rf ${HOME}/kalifs-armhf-full.sha512sum && rm -rf ${HOME}/kalifs-arm64-full.sha512sum"
 }
 
 function minimal() {
-     bash -c "cd ${HOME} && $(curl -fsSL https://bit.do/fNysW) && rm -rf ${HOME}/kalifs-armhf-minimal.tar.xz && rm -rf ${HOME}/kalifs-arm64-minimal.tar.xz && rm -rf ${HOME}/kalifs-armhf-minimal.sha512sum && rm -rf ${HOME}/kalifs-arm64-minimal.sha512sum"
+     bash -c "cd ${HOME} && $(curl -fsSL https://bit.ly/install-nethunter-minimal-termux) && rm -rf ${HOME}/kalifs-armhf-minimal.tar.xz && rm -rf ${HOME}/kalifs-arm64-minimal.tar.xz && rm -rf ${HOME}/kalifs-armhf-minimal.sha512sum && rm -rf ${HOME}/kalifs-arm64-minimal.sha512sum"
+}
+
+function nano() {
+     bash -c "cd ${HOME} && $(curl -fsSL https://bit.ly/install-nethunter-nano-termux) && rm -rf ${HOME}/kalifs-armhf-nano.tar.xz && rm -rf ${HOME}/kalifs-arm64-nano.tar.xz && rm -rf ${HOME}/kalifs-armhf-nano.sha512sum && rm -rf ${HOME}/kalifs-arm64-nano.sha512sum"
 }
 
 function uninstall() {
@@ -36,7 +40,7 @@ function incorrect_selection() {
 # ===================
 
 # Usage Menu
-until [[ "$choice" = "4" ]]; do
+until [[ "$choice" = "5" ]]; do
      clear
      echo "Kali-Nethunter-In-Termux Installer"
      echo ""
@@ -47,16 +51,18 @@ until [[ "$choice" = "4" ]]; do
      echo ""
      echo "[1]-Install Kali Nethunter In Termux Full Version"
      echo "[2]-Install Kali Nethunter In Termux Minimal Version"
-     echo "[3]-Uninstall Kali Nethunter In Termux"
-     echo "[4]-Exit Menu"
+     echo "[3]-Install Kali Nethunter In Termux Nano Version"
+     echo "[4]-Uninstall Kali Nethunter In Termux"
+     echo "[5]-Exit Menu"
      echo ""
      echo -n "Enter Choice: "
      read choice
      case $choice in
           1 ) clear ; full ; press_enter ;;
           2 ) clear ; minimal ; press_enter ;;
-          3 ) clear ; uninstall ; press_enter ;;
-          4 ) clear ; exit ;;
+          3 ) clear ; nano ; press_enter ;;
+          4 ) clear ; uninstall ; press_enter ;;
+          5 ) clear ; exit ;;
           * ) clear ; incorrect_selection ; press_enter ;;
      esac
 done
