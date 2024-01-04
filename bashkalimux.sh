@@ -5,19 +5,22 @@
 # Script Structure
 # ================
 
-# Menu Choices
+# Install Kali Nethunter In Termux Full Version Function
 function full() {
      bash -c "cd ${HOME} && $(curl -fsSL https://bit.ly/install-nethunter-full-termux) && rm -rf ${HOME}/kalifs-armhf-full.tar.xz && rm -rf ${HOME}/kalifs-arm64-full.tar.xz && rm -rf ${HOME}/kalifs-armhf-full.sha512sum && rm -rf ${HOME}/kalifs-arm64-full.sha512sum"
 }
 
+# Install Kali Nethunter In Termux Minimal Version Function
 function minimal() {
      bash -c "cd ${HOME} && $(curl -fsSL https://bit.ly/install-nethunter-minimal-termux) && rm -rf ${HOME}/kalifs-armhf-minimal.tar.xz && rm -rf ${HOME}/kalifs-arm64-minimal.tar.xz && rm -rf ${HOME}/kalifs-armhf-minimal.sha512sum && rm -rf ${HOME}/kalifs-arm64-minimal.sha512sum"
 }
 
+# Install Kali Nethunter In Termux Nano Version Function
 function nano() {
      bash -c "cd ${HOME} && $(curl -fsSL https://bit.ly/install-nethunter-nano-termux) && rm -rf ${HOME}/kalifs-armhf-nano.tar.xz && rm -rf ${HOME}/kalifs-arm64-nano.tar.xz && rm -rf ${HOME}/kalifs-armhf-nano.sha512sum && rm -rf ${HOME}/kalifs-arm64-nano.sha512sum"
 }
 
+# Uninstall Kali Nethunter In Termux Function
 function uninstall() {
      bash -c "rm -rf ${HOME}/kali-arm64 && rm -rf ${HOME}/kali-armhf && rm -rf ${PREFIX}/bin/nh && rm -rf ${PREFIX}/bin/nethunter && sleep 1 && echo [+] Successfully Uninstalled ..."
 }
@@ -57,6 +60,7 @@ until [[ "$choice" = "5" ]]; do
      echo ""
      echo -n "Enter Choice: "
      read choice
+     # Menu Choices
      case $choice in
           1 ) clear ; full ; press_enter ;;
           2 ) clear ; minimal ; press_enter ;;
