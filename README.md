@@ -8,4 +8,3 @@ This is a bash script by which you can install Kali Nethunter (Kali Linux) in yo
 3. Change Directory `cd bashkalimux`
 4. Give Execution Permission `chmod +x bashkalimux.sh`
 5. Run Script `./bashkalimux.sh`
-test
