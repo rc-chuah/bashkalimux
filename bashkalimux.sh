@@ -7,17 +7,17 @@
 
 # Install Kali Nethunter In Termux Full Version Function
 function full() {
-     bash -c "cd ${HOME} && $(curl -fsSL https://bit.ly/install-nethunter-full-termux) && rm -rf ${HOME}/kalifs-armhf-full.tar.xz && rm -rf ${HOME}/kalifs-arm64-full.tar.xz && rm -rf ${HOME}/kalifs-armhf-full.sha512sum && rm -rf ${HOME}/kalifs-arm64-full.sha512sum"
+     bash -c "cd ${HOME} && $(curl -fsSL https://bit.ly/install-nethunter-full-termux) && rm -rf ${HOME}/kali-nethunter-daily-dev-rootfs-full-armhf.tar.xz && rm -rf ${HOME}/kali-nethunter-daily-dev-rootfs-full-arm64.tar.xz && rm -rf ${HOME}/kali-nethunter-daily-dev-rootfs-full-armhf.tar.xz.sha512sum && rm -rf ${HOME}/kali-nethunter-daily-dev-rootfs-full-arm64.tar.xz.sha512sum"
 }
 
 # Install Kali Nethunter In Termux Minimal Version Function
 function minimal() {
-     bash -c "cd ${HOME} && $(curl -fsSL https://bit.ly/install-nethunter-minimal-termux) && rm -rf ${HOME}/kalifs-armhf-minimal.tar.xz && rm -rf ${HOME}/kalifs-arm64-minimal.tar.xz && rm -rf ${HOME}/kalifs-armhf-minimal.sha512sum && rm -rf ${HOME}/kalifs-arm64-minimal.sha512sum"
+     bash -c "cd ${HOME} && $(curl -fsSL https://bit.ly/install-nethunter-minimal-termux) && rm -rf ${HOME}/kali-nethunter-daily-dev-rootfs-minimal-armhf.tar.xz && rm -rf ${HOME}/kali-nethunter-daily-dev-rootfs-minimal-arm64.tar.xz && rm -rf ${HOME}/kali-nethunter-daily-dev-rootfs-minimal-armhf.tar.xz.sha512sum && rm -rf ${HOME}/kali-nethunter-daily-dev-rootfs-minimal-arm64.tar.xz.sha512sum"
 }
 
 # Install Kali Nethunter In Termux Nano Version Function
 function nano() {
-     bash -c "cd ${HOME} && $(curl -fsSL https://bit.ly/install-nethunter-nano-termux) && rm -rf ${HOME}/kalifs-armhf-nano.tar.xz && rm -rf ${HOME}/kalifs-arm64-nano.tar.xz && rm -rf ${HOME}/kalifs-armhf-nano.sha512sum && rm -rf ${HOME}/kalifs-arm64-nano.sha512sum"
+     bash -c "cd ${HOME} && $(curl -fsSL https://bit.ly/install-nethunter-nano-termux) && rm -rf ${HOME}/kali-nethunter-daily-dev-rootfs-nano-armhf.tar.xz && rm -rf ${HOME}/kali-nethunter-daily-dev-rootfs-nano-arm64.tar.xz && rm -rf ${HOME}/kali-nethunter-daily-dev-rootfs-nano-armhf.tar.xz.sha512sum && rm -rf ${HOME}/kali-nethunter-daily-dev-rootfs-nano-arm64.tar.xz.sha512sum"
 }
 
 # Uninstall Kali Nethunter In Termux Function
